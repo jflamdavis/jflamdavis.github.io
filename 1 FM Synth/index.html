@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="/../p5/p5.min.js"></script>
+        <script src="/../p5/addons/p5.sound.js"></script>
+        <script src="qwerty.js"></script>
+        <script src="/../NexusUI/NexusUI.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RuRu FM Synth</title>
+
+    <style>
+        .wrapper{
+            width: 600px;
+            font-family: 'Baloo Bhaijaan', cursive;
+            font-size: 20px;
+            position: absolute;
+            top: 100px;
+            left: calc(50% - 300px);
+        }
+        .button{
+            text-align: center;
+        }
+        .slider{
+            line-height: 10px;
+            text-align: center;
+        }
+        #beach{
+            margin: 60px auto;
+            width: 200px;
+            height: 200px;
+            background-image: url("img/wink.png");
+            background-size: contain;
+            background-repeat: no-repeat;     
+        }
+        #buttonOctaveDown{
+            position: absolute;
+            left: 75px;
+            top: 120px;
+        }
+        #buttonOctaveUp{
+            position: absolute;
+            right: 75px;
+            top: 120px;
+        }
+        #sliderModFreq{
+            position: absolute;
+            top: 280px;
+            left: 80px;
+        }
+        #sliderModDepth{
+            position: absolute;
+            top: 280px;
+            right: 80px;
+        }
+        #selectCarrier{
+            position: absolute;
+            top: -10px;
+            left: 120px;
+            text-align: right;
+
+        }
+        #selectModulator{
+            position: absolute;
+            top: -10px;
+            right: 120px;
+
+        }
+    </style>
+</head>
+<body>
+     <div class="wrapper">
+        <div class="image" id="beach"></div>
+        <div class="slider" id="sliderModFreq">ModFq</div>
+        <div class="slider" id="sliderModDepth">ModDt</div>
+        <div class="button" id="buttonOctaveUp">8veUp</div>
+        <div class="button" id="buttonOctaveDown">8veDn</div>
+        <div class="select" id="selectCarrier">OscWave</div>
+        <div class="select" id="selectModulator">ModWave</div>
+    </div>
+    <script src="ui.js"></script>
+</body>
+</html>

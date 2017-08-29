@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="/../p5/p5.min.js"></script>
+        <script src="/../p5/addons/p5.sound.js"></script>
+        <script src="/../p5/addons/p5.dom.js"></script>
+        <script src="/../NexusUI/NexusUI.js"></script>
+        <script src="qwerty.js" id="qwerty"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The RuRu Cowbell</title>
+
+    <style>
+        body{
+            background-color: black;
+            font-family: 'Baloo Bhaijaan', cursive;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        #title{
+            margin-top:100px;
+
+        }
+        .wrapper{
+            width:550px;
+            height:366px;
+            position: absolute;
+            top: 200px;
+            left: calc(50% - 275px);
+            background-image: url("img/cow.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+        #buttonOctaveDown{
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+        #buttonOctaveUp{
+            position: absolute;
+            top: 120px;
+            right: 50px;
+
+        }     
+    </style>
+</head>
+<body>
+    <h1 id="title">Pick your cow</h1>
+        <div class="wrapper">
+                <div class="button" id="buttonOctaveUp">8veUp</div>
+                <div class="button" id="buttonOctaveDown">8veDn</div>
+            </div>
+            <script src="ui.js"></script>
+    
+</body>
+</html>
